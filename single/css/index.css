@@ -200,17 +200,45 @@ html, body {
     color: #ececec;
 }
 
-.card img {
-    width: 700px;
-    height: 400px;
+.card-body a {
+  color: var(--color-primary);
 }
 
-.card .img-min {
-    display: none;
+.card-form {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
 }
-.card .img-min img {
-    width: 300px;
-    height: 200px;
+
+.card-input {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.card-input input {
+    border: none;
+    flex-grow: 1;
+    border-bottom: 1px solid #808080;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.card-button {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-button button {
+    margin-top: 10px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: none
 }
 
 /**********************
@@ -243,12 +271,6 @@ article:not(.bg-secondary) .card .card-header small {
 }
 
 @media (max-width: 720px) {
-    .card > img {
-        display: none;
-    }
-    .card .img-min {
-        display: block;
-    }
     .card-header, .card-body {
         text-align:center;
     }
