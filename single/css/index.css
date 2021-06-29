@@ -1,0 +1,264 @@
+:root {
+    --color-primary: #61DBFB;
+    --color-secondary: #282C34;
+}
+
+* {
+    font-family: 'Poppins', Helvetica, Impact, sans-serif;
+    margin: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+
+/**********************
+********* SHARED
+**********************/
+
+.text-secondary {color: var(--color-secondary);}
+.text-primary {color: var(--color-primary);}
+.bg-secondary {background-color: var(--color-secondary);}
+.bg-primary {background-color: var(--color-primary);}
+.window {width: 100%; min-width: 320px; min-height: 750px;}
+
+
+/**********************
+********* NAVBAR
+**********************/
+
+.menu-container {
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+}
+.menu-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    max-width: 1000px;
+}
+.menu-item {
+    display: inline-flex;
+    padding: 0px 20px;
+}
+.menu-item a {
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #909090;
+    text-decoration: none;
+}
+.menu-item:hover a {
+    color: #707070;
+}
+
+.menu-title {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-title img {
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 50px;
+    width: 60px;
+    animation-name: spinner;
+    animation-delay: 0;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/**********************
+********* LOGO
+**********************/
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main-picture {
+    max-height: 400px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-picture svg {
+    width: 700px;
+    height: 650px;
+}
+
+.main-title {
+    margin-bottom: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    color: #232127;
+    text-align: center;
+}
+
+.main-title small {
+    font-weight: lighter;
+    font-size: 18px;
+    color: #707070;
+}
+
+/**********************
+********* ADVANTAGE
+**********************/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.reverse {
+    flex-direction: row-reverse !important;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    max-width: 600px;
+    justify-content: center;
+}
+
+.card-info {
+    max-width: 500px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-header h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.card-header small {
+    font-size: 16px;
+    color: #efefef;
+    font-weight: lighter;
+}
+
+.card-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    padding-right: 50px;
+}
+
+.reverse .card-body, .reverse .card-header {
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+.card-body p {
+    color: #ececec;
+}
+
+.card img {
+    width: 700px;
+    height: 400px;
+}
+
+.card .img-min {
+    display: none;
+}
+.card .img-min img {
+    width: 300px;
+    height: 200px;
+}
+
+/**********************
+********* ALTERNATIVE COLORS
+**********************/
+article:not(.bg-secondary) .card .card-body p {
+    color: #202020;
+}
+article:not(.bg-secondary) .card .card-header h2 {
+    color: black;
+}
+article:not(.bg-secondary) .card .card-header small {
+    color: #050505;
+}
+
+/**********************
+********* FOOTER
+**********************/
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--color-secondary);
+}
+
+.footer h5 {
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 720px) {
+    .card > img {
+        display: none;
+    }
+    .card .img-min {
+        display: block;
+    }
+    .card-header, .card-body {
+        text-align:center;
+    }
+    .card-body {
+        padding-right: 0px;
+    }
+    .reverse .card-body, .reverse .card-header {
+        padding-left: 0px;
+    }
+    .d-xs-none {
+        display: none;
+    }
+}
