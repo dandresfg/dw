@@ -25,7 +25,7 @@ html, body {
 .text-primary {color: var(--color-primary);}
 .bg-secondary {background-color: var(--color-secondary);}
 .bg-primary {background-color: var(--color-primary);}
-.window {width: 100%; min-width: 320px; min-height: 750px;}
+.window {width: 100%; min-width: 320px; min-height: 600px;}
 
 
 /**********************
@@ -97,16 +97,14 @@ html, body {
 .main-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
     margin: auto;
+    padding-top: 150px;
 }
 
 .main-picture {
-    max-height: 400px;
-    min-width: 320px;
     width: 100%;
     max-width: 500px;
     overflow: hidden;
@@ -114,13 +112,8 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.main-picture svg {
-    width: 700px;
-    height: 650px;
-}
 
 .main-title {
-    margin-bottom: 20px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
