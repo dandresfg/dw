@@ -12,10 +12,10 @@
 
 <body>
     <main>
-        <ul>
+        <ol>
             <li><a href="/single/index.html">Single Page</a></li>
             <li><a href="/six/index.html">Six Page</a></li>
-        </ul>
+        </ol>
     </main>
 </body>
 </html>
