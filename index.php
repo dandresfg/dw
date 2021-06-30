@@ -13,8 +13,8 @@
 <body>
     <main>
         <ul>
-            <li><a href="/single">Single Page</a></li>
-            <li><a href="/six">Six Page</a></li>
+            <li><a href="/single/index.html">Single Page</a></li>
+            <li><a href="/six/index.html">Six Page</a></li>
         </ul>
     </main>
 </body>
