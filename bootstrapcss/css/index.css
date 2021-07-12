@@ -1,0 +1,106 @@
+:root{
+    --color-primary: #17469E;
+    --color-secondary: #282C34;
+}
+
+/* 
+* INICIO
+*/
+.logo {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+/* 
+* ENVIOS
+*/
+.info {
+    display: flex;
+    height: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .card { 
+    width: 100%;
+    max-width: 320px;
+}
+
+/* 
+* PLANES
+*/
+.card-header-text {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20%;
+    background-color: var(--color-primary);
+}
+.card-header-text span {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+.card-body-list ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 15px 0px;
+}
+.card-body-list ul li:first-child {border-top: none;}
+.card-body-list ul li:last-child {border-bottom: none;}
+.card-body-list ul li {
+    border-top: 1px solid #777;
+    padding: 10px 5px
+}
+
+
+/* 
+* CONTACTO
+*/
+.form-content {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.form-input input {
+    border: none;
+    flex-grow: 1;
+    border-bottom: 1px solid #808080;
+    margin: 10px;
+    padding: 10px 20px;
+}
+.form-input {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.form-button {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 
+* OVERRIDE BOOTSTRAP CLASSES
+*/
+.bg {min-height: 100vh;}
+.bg-primary {background-color: var(--color-primary);}
+.bg-alter {background-color: var(--color-secondary);}
+.nav-item {
+    min-width: 80px;
+    margin: auto 10px;
+    padding: auto 10px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
