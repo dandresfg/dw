@@ -13,8 +13,10 @@
 <body>
     <main>
         <ol>
-            <li><a href="/single/index.html">Single Page</a></li>
+            <li><a href="/single/index.html">One Page</a></li>
             <li><a href="/six/index.html">Six Page</a></li>
+            <li><a href="/bootstrapcss/index.html">Boostrap Page</a></li>
+            <li><a href="/materializecss/index.html">Materialize Page</a></li>
         </ol>
     </main>
 </body>
