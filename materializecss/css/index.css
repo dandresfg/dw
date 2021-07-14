@@ -1,0 +1,12 @@
+.img-logo {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.my { margin-top: 2rem; margin-bottom: 2rem;}
+.mb { margin-bottom: 2rem;}
+.mt { margin-top: 2rem;}
+.bg {min-height: 100vh;}
