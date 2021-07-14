@@ -62,36 +62,6 @@
 
 
 /* 
-* CONTACTO
-*/
-.form-content {
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.form-input input {
-    border: none;
-    flex-grow: 1;
-    border-bottom: 1px solid #808080;
-    margin: 10px;
-    padding: 10px 20px;
-}
-.form-input {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 100%;
-}
-.form-button {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* 
 * OVERRIDE BOOTSTRAP CLASSES
 */
 .bg {min-height: 100vh;}
