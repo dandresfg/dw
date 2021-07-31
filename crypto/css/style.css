@@ -1,0 +1,97 @@
+
+html {
+    min-width: 320px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.display-h1 {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 65px;
+}
+.display-h2 {
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 58px;
+}
+
+.min-window {
+    min-height: 100vh;
+}
+.window {
+    height: 100vh;
+}
+.window-middle {
+    min-height: 50vh;
+}
+
+.card-row-min {
+    height: 28vh;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-tip-row  {
+    height: 25vh;
+}
+.card-tip-row span {
+    font-size: 45px;
+}
+.card-tip-row  p {
+    font-size: 30px;
+}
+
+.faq {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.faq li {
+    display: flex;
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.faq li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.faq li:hover a {
+    color:dodgerblue;
+}
+
+
+#benefits .card-row-min {
+    background: #e0f2f1;
+}
+
+@media (max-width: 600px) {
+    .display-h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .display-h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .faq li {
+        width: 100%;
+    }
+}
+
+.relative { position: relative }
+.ads {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
