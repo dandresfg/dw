@@ -1,0 +1,168 @@
+
+html {
+    min-width: 320px;
+}
+
+.moda-nav ul { 
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    border-top: 1px solid #bdbdbd;
+}
+
+.moda-nav li {
+    padding-top: 10px;
+}
+
+.moda-nav li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.moda-nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+.moda-brand-icons {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.moda-brand-icons span {
+    margin: 0px 2vh;
+}
+
+.moda-shortcuts {
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moda-shortcuts span {
+    font-size: 25px;
+    max-width: 50%;
+    font-weight: bold;
+    color: black;
+    text-indent: 5px;
+    line-height: 30px;
+}
+
+.moda-shortcuts a {
+    min-width: 80px;
+    background-color: black;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.shadow-bg {
+    width: 100%;
+    min-height: 300px;
+    background-color: #bdbdbd;
+}
+
+.gallery .container {
+    margin-top: -200px;
+    background-color: white;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.relative { 
+    position: relative;
+    margin: 15px 2.5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.title {
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    text-align: center;
+    z-index: -1;
+    transition: all .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title span {
+    font-size: 26px;
+    color: black;
+}
+
+.relative .image {
+    width: 100%;
+    height: 300px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relative:hover .image {
+    border-color: black;
+}
+
+.ads {
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+/* EFFECTS */
+.relative::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.65);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.relative:hover {
+    cursor: pointer;
+}
+
+.relative:hover::before{
+    opacity: .75;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.relative:hover .title {
+    z-index: 100;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.65);
+}
+
+.relative-text {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 20%;
+}
