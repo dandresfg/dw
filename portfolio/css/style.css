@@ -302,9 +302,18 @@ nav {
   transition: all .4s ease-in-out;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 992px) {
+  #jobs .card-img-top {
+    height: 400px;
+  }
+  #jobs .img2 {
+    height: 250px !important;
+  }
   .card-columns {
-    column-count: 1;
+    column-count: 3;
+  }
+  #jobs {
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 768px) {
@@ -325,18 +334,9 @@ nav {
     transform: rotateY(90deg);
   }
 }
-@media (min-width: 992px) {
-  #jobs .card-img-top {
-    height: 400px;
-  }
-  #jobs .img2 {
-    height: 250px !important;
-  }
+@media (min-width: 544px) {
   .card-columns {
-    column-count: 3;
-  }
-  #jobs {
-    margin-bottom: -100px;
+    column-count: 1;
   }
 }
 
