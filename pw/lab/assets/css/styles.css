@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.login-input {
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.aside-styles {
+    background: #ffffff;
+    width: 250px;
+    height: calc(100vh - 60px);
+    border-right: 1px solid #e5e5e5;
+}
+
+.main-styles {
+    width: calc( 100vw - 250px);
+}
